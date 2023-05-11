@@ -1,3 +1,4 @@
+//? Ejercicio #1
 const axios = require('axios');
 
 const getPopularRepositories = async () => {
@@ -6,7 +7,7 @@ const getPopularRepositories = async () => {
     try {
         const response = await axios.get(url);
         const repositories = response.data;
-
+        console.log("---Ejercicio #1---");
         repositories.sort((a, b) => b.stargazers_count - a.stargazers_count);
 
         const morePopularRepositories = repositories.slice(0, 10);
@@ -22,11 +23,32 @@ const getPopularRepositories = async () => {
 
 getPopularRepositories();
 
-// function f(x, y, z) {
-//     let sum = x + y;
-//     let mult = sum * z;
-//     let result = Math.sin(mult);
-//     return result;
-// }
+//? Ejercicio #2
+console.log("---Ejercicio #2---");
+function f(x, y, z) {
+    let sum = x + y;
+    let mult = sum * z;
+    let result = Math.sin(mult);
+    return result;
+}
 
-// console.log(f(2,4,6))
+const x = Math.floor(Math.random() * 100) + 1;
+const y = Math.floor(Math.random() * 100) + 1;
+const z = Math.floor(Math.random() * 100) + 1;
+console.log(f(x,y,z))
+
+
+//? Ejercicio #3
+console.log("---Ejercicio #3---");
+const numImpar = (num) => {
+    let arr = [];
+    for (let i = 1; i <= num; i++) {
+        if (i % 2 != 0) {
+            arr.push(i);
+        }
+    }
+    return arr;
+}
+const n = Math.floor(Math.random() * 100) + 1;
+console.log("El numero seleccionado es: ", n);
+console.log(numImpar(n))
