@@ -50,5 +50,5 @@ const numImpar = (num) => {
     return arr;
 }
 const n = Math.floor(Math.random() * 100) + 1;
-console.log("El numero seleccionado es: ", n);
+console.log("El numero generado es: ", n);
 console.log(numImpar(n))
