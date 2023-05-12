@@ -23,3 +23,5 @@ Imagina que estás construyendo un sistema de gestión de vídeos. Diseña un mo
 base de datos que incluya tablas para vídeos, autores, colaboradores, comentarios, reviews
 y usuarios. Asegúrate de incluir las claves primarias, las claves foráneas y las restricciones
 de integridad necesarias para que el sistema funcione correctamente.
+
+![Bemaster](https://github.com/Yeizermarrugo/Bemaster-Fullstack/blob/main/Bemaster.png)
